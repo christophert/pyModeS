@@ -21,6 +21,11 @@ def bin2int(binstr: str) -> int:
     return int(binstr, 2)
 
 
+def int2bin(intr: int, fill: int) -> str:
+    """Convert an integer to a binary string. Fill specifies number of leading zeros"""
+    return '{intr:0{fill}b}'.format(intr=intr, fill=fill)
+
+
 def bin2hex(binstr: str) -> str:
     """Convert a binary string to hexdecimal string."""
     return "{0:X}".format(int(binstr, 2))
