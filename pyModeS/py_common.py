@@ -28,7 +28,7 @@ def int2bin(intr: int, fill: int) -> str:
 
 def bin2hex(binstr: str) -> str:
     """Convert a binary string to hexdecimal string."""
-    return "{0:X}".format(int(binstr, 2))
+    return "{0:02X}".format(int(binstr, 2))
 
 
 def df(msg: str) -> int:

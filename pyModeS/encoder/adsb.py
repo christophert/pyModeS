@@ -26,7 +26,7 @@ def generate_callsign_full_message(icao, callsign):
     ca = common.int2bin(5, 3)
     icaobin = common.hex2bin(icao)
     tc = common.int2bin(4, 5)
-    ec = common.int2bin(0, 3)
+    ec = common.int2bin(5, 3)
 
     callsign_hex = generate_callsign_payload(callsign)
 
